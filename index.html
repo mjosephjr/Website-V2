@@ -9,6 +9,7 @@
     <script src="resources/scripts/parallax.min.js"></script>
     <script type="text/javascript" src="resources/scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:500,600,700,800,900" rel="stylesheet">
+    <link href="resources/css/hamburgers.css" rel="stylesheet">
   </head>
   <body>
 
@@ -47,10 +48,10 @@
           </div>
           <div class="story-text">
             <p>I’m a geographer, designer and story teller. I’m passionate about building the future by understanding
-          inter-relationships and designing for innovative solutions.
-          I have an academic background in GIS and aerial mapping, and a passion for art and design.</p></br>
-            <p>I love adventure travel, nature, art, music, health and wellness. I’m also interested in
-          environmental education, sustainability, and the future of human flight.</p></br>
+          inter-relationships and designing innovative solutions.
+          I have a background in geomatics, and a passion for art and design.</p></br>
+            <p>I love to travel, and I enjoy creative work such as art and music. I’m interested in
+              sustainable development, startups and emerging technologies.</p></br>
             <p>I am currently the Map Design Team Lead at <a target="_blank" rel="noopener noreferrer" href="https://www.mappedin.com" id="current-job">Mappedin.</a></p></br>
           </div>
         </div>
@@ -139,54 +140,127 @@
 
 <!--Logo / Branding-->
           <div class="logo-section">
-            <div>
+            <div class="logo-title">
               <h3>Logo / Branding</h3>
             </div>
-            <div>
-              <div>
-                <img></img>
+            <div class="logo-images">
+              <div class="logo-image-container">
+                <img class="logo-pic" src="resources/images/UWCC-Logo.png"></img>
               </div>
-              <div>
-                <img></img>
+              <div class="logo-image-container">
+                <img class="logo-pic" src="resources/images/DerekL-Logo.png"></img>
               </div>
-              <div>
-                <img></img>
+              <div class="logo-image-container">
+                <img class="logo-pic" src="resources/images/PowderDogs-Logo.png"></img>
               </div>
-              <div>
-                <img></img>
+              <div class="logo-image-container">
+                <img class="logo-pic" src="resources/images/STP-Logo.png"></img>
               </div>
             </div>
           </div>
 
 <!--Multi-Media Projects-->
 
-          <div class="media-section">
-            <div>
+          <div id="media-section">
+            <div class="media-title">
               <h3>Multi-Media Projects</h3>
             </div>
-            <div>
-              <div>
-                <img></img>
-              </div>
-              <div>
-                <img></img>
-              </div>
+            <div class="media-container">
+              <article class="video-container">
+                <figure>
+                  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI">
+                  <img class="videoThumb" src="resources/images/bermuda-thumbnail.jpg"></a>
+                </figure>
+                <div class="videoTitle">
+                <span>Aquarium Diving</span>
+                </div>
+              </article>
+              <article class="video-container">
+                <figure>
+                  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI">
+                  <img class="videoThumb" src="resources/images/italy-thumbnail.jpg"></a>
+                </figure>
+                <div class="videoTitle">
+                <span>Italy Travel Video</span>
+                </div>
+              </article>
+              <article class="video-container">
+                <figure>
+                  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI">
+                  <img class="videoThumb" src="resources/images/fiji-thumbnail.png"></a>
+                </figure>
+                <div class="videoTitle">
+                <span>Fiji Adventure</span>
+                </div>
+              </article>
+              <article class="video-container">
+                <figure>
+                  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI">
+                  <img class="videoThumb" src="resources/images/nbp-thumbnail.png"></a>
+                </figure>
+                <div class="videoTitle">
+                <span>Bermuda Tourism Project</span>
+                </div>
+              </article>
             </div>
           </div>
 
-<!-- References-->
-
-        <div class="references">
-        </div>
-
-<!-- Contact!-->
+<!-- Contact! -->
 
         <div class="contact">
+          <div class="contact-title">
+            <h3>Let's Get in Touch!</h3>
+          </div>
+          <div class="form-container">
+
+            <form method="post" action="resources/scripts/index.php">
+
+                <label>Name</label>
+                <input name="name" placeholder="Type Here">
+
+                <label>Email</label>
+                <input name="email" type="email" placeholder="Type Here">
+
+                <label>Message</label>
+                <textarea name="message" placeholder="Type Here"></textarea>
+
+                <input id="submit" name="submit" type="submit" value="Submit">
+
+            </form>
+
+          </div>
         </div>
-      </div>
+
+<!-- Closing div for section-container -->
+
+</div>
+
 <!-- Footer -->
       <footer>
-        <div>
+        <div class="social">
+          <div class="linkedin">
+            <object type="image/svg+xml" data="resources/images/linkedin-box.svg">
+              Your browser does not support SVG
+            </object>
+          </div>
+          <div class="twitter">
+            <object type="image/svg+xml" data="resources/images/twitter-box.svg">
+              Your browser does not support SVG
+            </object>
+          </div>
+          <div class="instagram">
+            <object type="image/svg+xml" data="resources/images/instagram-box.svg">
+              Your browser does not support SVG
+            </object>
+          </div>
+          <div class="500px">
+            <object type="image/svg+xml" data="resources/images/500px-box.svg">
+              Your browser does not support SVG
+            </object>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy Mathew Joseph 2018</p>
         </div>
       </footer>
 

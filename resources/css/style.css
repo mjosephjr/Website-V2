@@ -94,6 +94,10 @@ li:hover {
   text-shadow: 5px;
 }
 
+@media only screen and (max-width: 765px) {
+
+}
+
 /* My Story Section + Overlay Image of Reef in front of Main Container */
 
 .page-container {
@@ -108,6 +112,12 @@ li:hover {
   position: absolute;
   bottom: 35rem;
   max-width: 100vw;
+}
+
+@media only screen and (max-width: 765px) {
+  .parallax {
+    min-height: 750px;
+  }
 }
 
 /* My Story Section Content */
@@ -129,7 +139,7 @@ li:hover {
 
 .story-text {
   padding: 3.6rem 2.5rem 2.5rem 5rem;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   max-width: 800px;
 }
 
@@ -149,6 +159,27 @@ li:hover {
   background-color: lightgrey;
 }
 
+@media only screen and (max-width: 765px) {
+  .profile-pic {
+    width: 8rem;
+  }
+  .story-content {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .story-text {
+    padding-bottom: 4rem;
+  }
+  .page-container {
+    height: 40rem;
+  }
+  .banner-overlay {
+    bottom: 40rem;
+  }
+}
+
 /* Geography Section */
 
 .section-title {
@@ -156,7 +187,7 @@ li:hover {
 }
 
 .section-title h2 {
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 5rem 5rem 0rem 5rem;
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -166,7 +197,7 @@ li:hover {
 h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
-  padding: 1rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -174,63 +205,113 @@ h3 {
 .geog-section {
   display: flex;
   align-content: center;
+  align-items: center;
   justify-content: center;
   color: #150d0f;
-  margin: 1rem 3rem 1rem 3rem;
-  height: 35rem;
+  margin: 0rem 0rem 2rem 0rem;
+  min-height: 25rem;
 }
 
 .geog-section-desc {
-  max-width: 50%;
+  width: 50%;
+  margin: 0rem 5rem;
 }
 
 .geog-section-desc p {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.2rem;
-  padding: 1rem 0rem;
+  line-height: 1.8rem;
 }
 
 .geog-section-img {
-  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   width: 50%;
-  height: 32.5rem;
 }
 
 .geog-section-pic {
-  position: absolute;
-  bottom: 65px;
-  width: 45rem;
+  width: 90%;
 }
 
 #geog-1 {
   flex-direction: row-reverse;
 }
 
-#geog-2 {
-  height: 30rem;
-}
-
 #geog-3 {
   flex-direction: row-reverse;
-  height: 30rem;
+  margin-bottom: -1.5rem;
 }
 
 #geog-pic-1 {
-  right: -20px;
+  right: 0px;
 }
 
 #geog-pic-2 {
+  top: 0px;
   left: 0px;
+  margin-left: -0.25rem;
 }
 
 #geog-pic-3 {
-  right: 0px
+  top: 0px;
+  right: 0px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .geog-section-pic {
+    width: 100%;
+  }
+  .geog-section-img {
+    align-items: center
+  }
+  #geog-1 {
+    margin-top: 0rem;
+  }
+  .section-title h2 {
+    padding: 5rem 5rem 3rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+
+  .section-title {
+    text-align: center;
+  }
+  .section-title h2 {
+    padding: 3rem;
+  }
+  .geog-section-pic {
+    width: 60%;
+  }
+  .geog-section {
+    display: block;
+    width: 100%
+  }
+  .geog-section-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+  }
+  .geog-section-desc {
+    display: block;
+    width: 100%;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+
 
 /* Design Section */
 
+#design {
+  padding-top: 0rem;
+}
+
 .design-banner {
   position: relative;
+  margin-bottom: -2px;
 }
 
 #design-h3 {
@@ -276,4 +357,290 @@ h3 {
 
 #design-section-1 {
   flex-direction: row-reverse;
+}
+
+/* Logo Section */
+
+.logo-title h3 {
+  margin: 2rem 3rem 0rem 3rem;
+  color: #141218;
+  font-weight: 700;
+}
+
+.logo-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 3rem 8rem 3rem;
+  margin-bottom: 1rem;
+}
+
+.logo-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.logo-pic {
+  height: 100%;
+}
+
+.logo-pic:hover {
+  height: 110%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .logo-images {
+    padding: 4rem 2rem;
+  }
+
+  .logo-image-container {
+    height: 150px
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .logo-image-container {
+    height: 120px
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .logo-section h3 {
+    text-align: center;
+  }
+
+  .logo-images {
+    display: block;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  .logo-pic {
+      height: 100%;
+  }
+
+  .logo-pic:hover {
+      height: 105%;
+  }
+
+  .logo-image-container {
+      height: 180px;
+      margin-top: 0rem;
+      margin-bottom: 2rem;
+  }
+}
+
+/* Multi-Media Title */
+
+.media-title h3 {
+  margin: 0 3rem;
+  padding: 3rem 0;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* Video Gallery CSS */
+
+#media-section {
+  background-color: #141218;
+  overflow: hidden;
+}
+
+.videoThumb {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*
+  This is the starting grid for each video with thumbnails 4 across for the largest screen size.
+  It's important to use percentages or there may be gaps on the right side of the page.
+  */
+
+  .video-container {
+    background: #f9f9f9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    width: 23%; /* Thumbnails 4 across */
+    margin: 0% 1% 5% 1%;
+    float: left;
+    color: black;
+    text-align: center;
+  }
+
+  .media-container {
+    margin: 4rem 2.5rem 5rem 2.5rem;
+  }
+
+  .videoTitle {
+    padding: 20px 0;
+  }
+
+  .videoTitle span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+  }
+
+   /*
+   These keep the height of each video thumbnail consistent between YouTube and Vimeo.
+   Each can have thumbnail sizes that vary by 1px and are likely break your layout.
+   */
+
+  .video-container figure {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+
+  .video-container figure a {
+    display: block;
+    margin: 0%;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
+
+  /* Media Queries - This is the responsive grid. */
+
+  @media (max-width: 1024px) {
+    .video-container {
+      width: 48%; /* Thumbnails 2 across */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .video-container {
+      display: block;
+      width: 96%; /* Single column view. */
+      margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
+      float: none;
+    }
+    .media-title h3 {
+      text-align: center;
+    }
+  }
+
+  /* These are preferred rollover styles. */
+
+  .video-container img {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .video-container img:hover, .video img:active, .video img:focus {
+    opacity: 0.75;
+  }
+
+  /* Contact Form */
+
+  .contact-title h3 {
+    margin: 0 3rem;
+    padding-top: 3rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+.contact {
+  width: 100%;
+  background-color: #141218;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: image();
+}
+
+form {
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+textarea {
+  width: 100%;
+  height: 5rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+}
+
+#submit {
+  width: 50%;
+  height: 2.5rem;
+  color: white;
+  background-color: #238db1;
+  border-style: none;
+  border-radius: 3px;
+  margin-top: 2rem;
+}
+
+#submit:hover {
+  background-color: #1baee0;
+}
+
+@media (max-width: 765px) {
+  .contact-title h3 {
+    text-align: center;
+  }
+  form {
+    width: 80%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  height: 15rem;
+  padding: 0 5rem;
+}
+.copyright {
+  color: white;
+}
+
+.social {
+  display: inline-flex;
+}
+
+object {
+  height: 50px;
+}
+
+@media (max-width: 765px) {
+  footer {
+    display: block;
+    width: 100%;
+  }
+  .copyright {
+    display: block;
+    text-align: center;
+    padding: 3rem auto;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 3rem;
+  }
+  object {
+    height: 65px;
+  }
 }
