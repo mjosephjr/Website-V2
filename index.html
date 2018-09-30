@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="resources/images/backup-banner.jpg">
+    <meta property="og:description" content="Welcome! This site is an intro to who I am and a portfolio of what I do."/>
+    <link rel="icon" href="resources/images/favicon.png">
     <title>Mathew Joseph</title>
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
@@ -9,20 +13,29 @@
     <script src="resources/scripts/parallax.min.js"></script>
     <script type="text/javascript" src="resources/scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:500,600,700,800,900" rel="stylesheet">
-    <link href="resources/css/hamburgers.css" rel="stylesheet">
   </head>
+
   <body>
 
 
 <!--Main Image Section -->
 
-    <div class="main-container">
+    <div class="main-container" id="main-parallax">
       <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="resources/images/Website_Main_Banner.png">
         <nav class="nav-overlay" id="nav-overlay">
           <span class="nav-name">Mathew Joseph</span>
           <ul>
-            <li>My Story</li>
-            <li>Experience</li>
+            <a href="#nav-story-section" id="nav-item"><li>My Story</li></a>
+            <a href="#design" id="nav-item"><li>Portfolio</li></a>
+            <a href="resources/mathew-joseph-resume.pdf" target="_blank" id="nav-item"><li>Resume</li></a>
+            <a href="#nav-contact" id="nav-item"><li>Contact</li></a>
+          </ul>
+          <object class="menu-icon" type="image/svg+xml" data="resources/images/menu-icon.svg">
+          </object>
+        </nav>
+        <nav class="mobile-menu">
+          <ul>
+            <li>Portfolio</li>
             <li>Resume</li>
             <li>Contact</li>
           </ul>
@@ -41,7 +54,7 @@
 
     <div class="page-container">
       <img class="banner-overlay" src="resources/images/Banner_Overlay.png">
-      <div class="story-container">
+      <div class="story-container" id="nav-story-section">
         <div class="story-content">
           <div>
             <img class="profile-pic" src="resources/images/Profile-Pic1.png">
@@ -50,9 +63,9 @@
             <p>I’m a geographer, designer and story teller. I’m passionate about building the future by understanding
           inter-relationships and designing innovative solutions.
           I have a background in geomatics, and a passion for art and design.</p></br>
-            <p>I love to travel, and I enjoy creative work such as art and music. I’m interested in
+            <p id="story-text-extra">I love to travel, and I enjoy creative challenges. I’m interested in
               sustainable development, startups and emerging technologies.</p></br>
-            <p>I am currently the Map Design Team Lead at <a target="_blank" rel="noopener noreferrer" href="https://www.mappedin.com" id="current-job">Mappedin.</a></p></br>
+            <p id="story-text-extra">I am currently the Map Design Team Lead at <a target="_blank" rel="noopener noreferrer" href="https://www.mappedin.com" id="current-job">Mappedin.</a></p></br>
           </div>
         </div>
       </div>
@@ -72,10 +85,9 @@
         </div>
         <div class="geog-section-desc">
           <h3>Geomatics / Aerial Mapping</h3>
-          <p>In 2017, I completed my 5 year Bachelor’s Degree in Honours, Geography and Environmental Management with a specialization in Geomatics.</p>
+          <p>In 2017, I completed my Bachelor’s Degree in Honours, Geography and Environmental Management with a specialization in Geomatics.</p>
           <p>In that time, I won $11,000 in funding from the Faculty of Environment to acquire an unmanned aerial vehicle for our first aerial mapping program.</p>
-          <p>Ran workshops on Unmanned Mapping through the UW Geospatial Club.</p>
-          <p>Was involved in starting the University of Waterloo’s first successful composting program - UW Campus Compost.</p>
+          <p>I ran workshops on unmanned mapping through the Geospatial Club, and was also involved in starting the university’s first successful composting program - UW Campus Compost.</p>
         </div>
       </div>
 
@@ -88,7 +100,7 @@
             <h3>Mapping the Indoors</h3>
             <p>Mappedin is the creator of the worlds leading CMS for indoor maps.</p>
             <p>In my time as the Map Design Team Lead, our team has designed and digitized over 150+ venues ranging from malls, hospitals, stadiums and more.</p>
-            <p>We're always striving to represent indoor spaces in intuitive and visual compelling ways, all while delivering on large implementations and tight timelines.</p>
+            <p>We're always striving to represent indoor spaces in intuitive and visually compelling ways, all while delivering on large implementations and tight timelines.</p>
           </div>
         </div>
 
@@ -107,33 +119,33 @@
 
 <!--Design Section / Portfolio-->
         <div class="section-title" id="design">
-          <h2>Design & Multi-Media</h2>
+          <h2>Design & MultiMedia</h2>
         </div>
 
 <!--UI / UX Design Projects-->
           <div class="product-section">
             <div class="design-banner">
               <h3 id="design-h3">UI / UX Design Projects</h3>
-              <img class="design-banner-img" src="resources/images/Design-Banner.png">
+              <img class="design-banner-img" src="resources/images/Design-Banner2.png">
             </div>
             <div class="design-section" id="design-section-1">
               <div class="design-img">
                 <img class="design-pic-1" src="resources/images/Skyward-Website.png"></img>
               </div>
-              <div class="design-desc">
+              <div class="design-desc" id="skyward-text">
                 <p>Skyward Industries Website Re-Design</p>
-                <p>Worked with a Front-End Developer to conceptualize and design the new version of the Skyward Website. This included building and iterating on mockups, designing graphics, selecting and developing content and fine tuning aesthetic elements and styling.</p>
-                <p>See www.skywardindustries.org</p>
+                <p>Worked with a front-end developer to conceptualize and design the new version of the Skyward Website. This included building and iterating on mockups, designing graphics, selecting and developing content and fine tuning aesthetic elements and styling.</p>
+                <p>See our work at <a id="design-link" target="_blank" rel="noopener noreferrer" href="https://www.skywardindustries.org">skywardindustries.org</a></p>
               </div>
             </div>
             <div class="design-section" id="design-section-2">
               <div class="design-img">
                 <img class="design-pic-2" src="resources/images/Sharebibles.png"></img>
               </div>
-              <div class="design-desc">
+              <div class="design-desc" id="share-bibles-text">
                 <p>Share Bibles Stylesheet and App Re-Design</p>
                 <p>Worked with a FaithTech team to improve the aesthetic and usability of the Share Bibles App - Used by distribution teams for tracking community outreach.</p>
-                <p>Download the app at link</p>
+                <p>Download the app at <a id="design-link" target="_blank" rel="noopener noreferrer" href="https://www.sharebibles.com">sharebibles.com</a></p>
               </div>
             </div>
           </div>
@@ -141,7 +153,7 @@
 <!--Logo / Branding-->
           <div class="logo-section">
             <div class="logo-title">
-              <h3>Logo / Branding</h3>
+              <h3>Logo Design / Branding</h3>
             </div>
             <div class="logo-images">
               <div class="logo-image-container">
@@ -163,12 +175,12 @@
 
           <div id="media-section">
             <div class="media-title">
-              <h3>Multi-Media Projects</h3>
+              <h3>MultiMedia Projects</h3>
             </div>
             <div class="media-container">
               <article class="video-container">
                 <figure>
-                  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI">
+                  <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=fSQFGS76vDs" target="_blank">
                   <img class="videoThumb" src="resources/images/bermuda-thumbnail.jpg"></a>
                 </figure>
                 <div class="videoTitle">
@@ -177,7 +189,7 @@
               </article>
               <article class="video-container">
                 <figure>
-                  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI">
+                  <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=IDckzYFCTi8&t=1s" target="_blank">
                   <img class="videoThumb" src="resources/images/italy-thumbnail.jpg"></a>
                 </figure>
                 <div class="videoTitle">
@@ -186,7 +198,7 @@
               </article>
               <article class="video-container">
                 <figure>
-                  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI">
+                  <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=pH6fxQ3cIWM&t=52s" target="_blank">
                   <img class="videoThumb" src="resources/images/fiji-thumbnail.png"></a>
                 </figure>
                 <div class="videoTitle">
@@ -195,7 +207,7 @@
               </article>
               <article class="video-container">
                 <figure>
-                  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI">
+                  <a class="fancybox fancybox.iframe" href="https://vimeo.com/169288602" target="_blank">
                   <img class="videoThumb" src="resources/images/nbp-thumbnail.png"></a>
                 </figure>
                 <div class="videoTitle">
@@ -207,7 +219,7 @@
 
 <!-- Contact! -->
 
-        <div class="contact">
+        <div class="contact" id="nav-contact">
           <div class="contact-title">
             <h3>Let's Get in Touch!</h3>
           </div>
@@ -216,13 +228,13 @@
             <form method="post" action="resources/scripts/index.php">
 
                 <label>Name</label>
-                <input name="name" placeholder="Type Here">
+                <input name="name">
 
                 <label>Email</label>
-                <input name="email" type="email" placeholder="Type Here">
+                <input name="email" type="email">
 
                 <label>Message</label>
-                <textarea name="message" placeholder="Type Here"></textarea>
+                <textarea name="message"></textarea>
 
                 <input id="submit" name="submit" type="submit" value="Submit">
 
@@ -238,31 +250,49 @@
 <!-- Footer -->
       <footer>
         <div class="social">
-          <div class="linkedin">
-            <object type="image/svg+xml" data="resources/images/linkedin-box.svg">
-              Your browser does not support SVG
-            </object>
-          </div>
-          <div class="twitter">
-            <object type="image/svg+xml" data="resources/images/twitter-box.svg">
-              Your browser does not support SVG
-            </object>
-          </div>
-          <div class="instagram">
-            <object type="image/svg+xml" data="resources/images/instagram-box.svg">
-              Your browser does not support SVG
-            </object>
-          </div>
-          <div class="500px">
-            <object type="image/svg+xml" data="resources/images/500px-box.svg">
-              Your browser does not support SVG
-            </object>
-          </div>
+          <a href="https://www.linkedin.com/in/tholathmathewjoseph/" target="_blank">
+            <div class="social-img-div">
+              <img id="social-img" src="resources/images/linkedin-box.svg">
+              </img>
+            </div>
+          </a>
+          <a href="https://twitter.com/MathewJosephJr" target="_blank">
+            <div class="social-img-div">
+              <img id="social-img" src="resources/images/twitter-box.svg">
+              </img>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/mathewjosephjr/" target="_blank">
+            <div class="social-img-div">
+              <img id="social-img" src="resources/images/instagram-box.svg">
+              </img>
+            </div>
+          </a>
+          <a href="https://500px.com/mathewjosephjr" target="_blank">
+            <div class="social-img-div">
+              <img id="social-img" src="resources/images/500px-box.svg">
+              </img>
+            </div>
+          </a>
         </div>
         <div class="copyright">
-          <p>Copyright &copy Mathew Joseph 2018</p>
+          <p>Copyright &copy by Mathew Joseph 2018</p>
         </div>
       </footer>
+
+      <script>
+      var mainbottom = $('#main-parallax').offset().top + $('#main-parallax').height();
+      // on scroll,
+        $(window).on('scroll',function(){
+      // we round here to reduce a little workload
+        stop = Math.round($(window).scrollTop());
+          if (stop > mainbottom) {
+              $('.nav-overlay').addClass('scrolled');
+        } else {
+              $('.nav-overlay').removeClass('scrolled');
+      }
+    });
+      </script>
 
   </body>
 </html>

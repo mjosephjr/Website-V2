@@ -14,6 +14,13 @@ body {
   color: white;
 }
 
+/* Portfolio Offset applied when selected from Nav bar */
+
+#design:target {
+  padding-top: 3rem;
+}
+
+
 /* Main Container w/ Parallax Effect */
 
 .main-container {
@@ -33,6 +40,12 @@ body {
   z-index: 4;
   position: fixed;
   width: 100%;
+  z-index: 10 !important;
+}
+
+.nav-overlay.scrolled {
+  background-color: #150d0f !important;
+  transition: background-color 50ms linear;
 }
 
 .title-overlay {
@@ -87,6 +100,13 @@ li {
   display: inline-flex;
   align-items: center;
   padding: 2rem 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+#nav-item {
+  text-decoration: none;
 }
 
 li:hover {
@@ -94,8 +114,45 @@ li:hover {
   text-shadow: 5px;
 }
 
-@media only screen and (max-width: 765px) {
+.menu-icon {
+  display: none;
+  height: 1.5rem;
+  margin: 2rem 3rem;
+}
 
+.mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 765px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-overlay ul {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0rem 3rem;
+    z-index: 4;
+    position: fixed;
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  nav ul {
+    padding: 0rem;
+  }
+  li {
+    display: block;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 0.6rem 0rem;
+    text-decoration: underline;
+    opacity: 0.8;
+  }
 }
 
 /* My Story Section + Overlay Image of Reef in front of Main Container */
@@ -162,21 +219,32 @@ li:hover {
 @media only screen and (max-width: 765px) {
   .profile-pic {
     width: 8rem;
+    margin-left: 0rem;
   }
   .story-content {
     display: block;
     width: 100%;
+    padding-top: 5rem;
     margin: 2rem auto;
     text-align: center;
   }
   .story-text {
-    padding-bottom: 4rem;
+    padding: 2rem 3rem 4rem 3rem;
   }
   .page-container {
     height: 40rem;
   }
   .banner-overlay {
     bottom: 40rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .page-container {
+    height: 45rem;
+  }
+  .banner-overlay {
+    bottom: 45rem;
   }
 }
 
@@ -219,7 +287,7 @@ h3 {
 
 .geog-section-desc p {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.8rem;
+  line-height: 1.7rem;
 }
 
 .geog-section-img {
@@ -281,7 +349,7 @@ h3 {
     padding: 3rem;
   }
   .geog-section-pic {
-    width: 60%;
+    width: 80%;
   }
   .geog-section {
     display: block;
@@ -317,7 +385,7 @@ h3 {
 #design-h3 {
   position: absolute;
   bottom: 3rem;
-  left: 3rem;
+  left: 5rem;
 }
 
 .design-banner-img {
@@ -330,7 +398,7 @@ h3 {
   align-items: center;
   background-color: #141218;
   top: 0px;
-  padding: 0rem 3rem;
+  padding: 1rem 5rem;
 }
 
 .design-desc {
@@ -339,12 +407,29 @@ h3 {
 
 .design-desc p {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.2rem;
+  line-height: 1.7rem;
   padding: 1rem 0rem;
 }
 
+#skyward-text {
+  padding-right: 3rem;
+}
+
+#share-bibles-text {
+  padding-left: 4rem;
+}
+
+#design-link {
+  color: #238db1;
+  text-decoration: none;
+}
+
+#design-link:hover {
+  color: #1baee0;
+}
+
 .design-img {
-  width: 50%;
+  width: 40%;
 }
 
 .design-pic-1 {
@@ -359,10 +444,57 @@ h3 {
   flex-direction: row-reverse;
 }
 
+#design-section-2 {
+  padding-bottom: 10rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #design-h3 {
+    bottom: 2rem;
+  }
+  #design-section-2 {
+    padding-bottom: 7.5rem;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  #design-h3 {
+    bottom: -3rem;
+  }
+  .design-section {
+    display: block;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  .design-desc {
+    width: 100%;
+    text-align: center;
+  }
+  .design-img {
+    width: 100%;
+  }
+  #skyward-text, #share-bibles-text {
+    padding: 2rem 1rem;
+  }
+  .design-pic-1 {
+    padding: 0rem 2rem;
+  }
+
+  .design-pic-2 {
+    padding: 0rem 2rem;
+  }
+  #design-section-1 {
+    padding-top: 4rem;
+  }
+  #design-section-2 {
+    padding-bottom: 5rem;
+  }
+
+}
+
 /* Logo Section */
 
 .logo-title h3 {
-  margin: 2rem 3rem 0rem 3rem;
+  margin: 3rem 3rem 0rem 5rem;
   color: #141218;
   font-weight: 700;
 }
@@ -412,6 +544,7 @@ h3 {
 @media only screen and (max-width: 600px) {
 
   .logo-section h3 {
+    margin: 3rem 0rem 0rem 0rem;
     text-align: center;
   }
 
@@ -438,7 +571,7 @@ h3 {
 /* Multi-Media Title */
 
 .media-title h3 {
-  margin: 0 3rem;
+  margin: 0 5rem;
   padding: 3rem 0;
   color: white;
   font-weight: 600;
@@ -533,13 +666,15 @@ h3 {
   }
 
   .video-container img:hover, .video img:active, .video img:focus {
-    opacity: 0.75;
+    border-color: #238db1;
+    border-width: 4px;
+    border-style: solid;
   }
 
   /* Contact Form */
 
   .contact-title h3 {
-    margin: 0 3rem;
+    margin: 0 5rem;
     padding-top: 3rem;
     color: white;
     font-weight: 600;
@@ -621,8 +756,17 @@ footer {
   display: inline-flex;
 }
 
-object {
+.social .social-img-div {
   height: 50px;
+  padding: 0rem;
+}
+
+#social-img {
+  height: 100%;
+}
+
+.social-img-div:hover {
+  background-color: #238db1;
 }
 
 @media (max-width: 765px) {
@@ -640,7 +784,7 @@ object {
     justify-content: center;
     padding: 3rem 3rem;
   }
-  object {
+  #social-img {
     height: 65px;
   }
 }
