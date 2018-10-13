@@ -13,9 +13,15 @@
     <script src="resources/scripts/parallax.min.js"></script>
     <script type="text/javascript" src="resources/scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:500,600,700,800,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
 
   <body>
+
+<!--Pre-Loading -->
+    <div class="preload">
+      <div class="loader">Loading...</div>
+    </div>
 
 
 <!--Main Image Section -->
@@ -23,7 +29,7 @@
     <div class="main-container" id="main-parallax">
       <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="resources/images/Website_Main_Banner.png">
         <nav class="nav-overlay" id="nav-overlay">
-          <span class="nav-name">Mathew Joseph</span>
+          <span class="nav-name"><a href="#top" id="nav-item">Mathew Joseph</a></span>
           <ul>
             <a href="#nav-story-section" id="nav-item"><li>My Story</li></a>
             <a href="#design" id="nav-item"><li>Portfolio</li></a>
@@ -279,6 +285,14 @@
           <p>Copyright &copy by Mathew Joseph 2018</p>
         </div>
       </footer>
+
+      <script>
+          $(function() {
+            $(".preload").delay(1000).fadeOut(500, function() {
+              //$(".main-container, .page-container").fadeIn(1000);//
+            });
+          });
+      </script>
 
       <script>
       var mainbottom = $('#main-parallax').offset().top + $('#main-parallax').height();
